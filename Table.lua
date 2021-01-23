@@ -281,7 +281,7 @@ end
 --- @param value any The value to assign to array[key]
 --- @return table
 function Table.Add(array, key, value)
-	if not array[key] then
+	if array[key] == nil then
 		array[key] = value
 	end
 
